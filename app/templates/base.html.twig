@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>{% block title %}Lifty - Lift Yourself!{% endblock %}</title>
+        <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 128 128%22><text y=%221.2em%22 font-size=%2296%22>⚫️</text></svg>">
+        {% block stylesheets %}
+            {{ encore_entry_link_tags('base') }}
+        {% endblock %}
+        {% block javascripts %}
+            {{ encore_entry_script_tags('base') }}
+        {% endblock %}
+    </head>
+    <body>
+            <div class="nav">
+                <div class="title">
+                    <div class="brand">
+                        <a href="">
+                            <img src="./img/lifty.png">
+                        </a>
+                    </div>
+                </div>
+                <div class="buttons">
+                    <a href="">About</a>
+                    <a href="">Index</a>
+                    <a href="">Login</a>
+                </div>
+            </div>
+            <div class="container">
+                <div class="container-blur">
+                    <div class="title">
+                        <h1>wiemy, nie potrzebujesz.</h1>
+                        <p>ale chociaż wejdź zobaczyć fajne auta</p>
+                    </div>
+                    <div class="search_bar">
+                        <input type="date" placeholder="e">
+                        <input type="submit" value="Szukaj">
+                    </div>
+                </div>
+            </div>
+            <div class="footer">
+                <div class="section">
+                footer
+                </div>
+                <div class="section">
+                dla
+                </div>
+                <div class="section">
+                stópkarzy
+                </div>
+            </div>
+        
+    </body>
+</html>

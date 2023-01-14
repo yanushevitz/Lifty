@@ -1,0 +1,206 @@
+/* OVERALL RESETS */
+
+body>* {
+    margin: 0;
+    padding: 0;
+    font-size: 2.5rem;
+}
+
+body div {
+    border-radius: 15px;
+}
+
+body {
+    width: 97%;
+    margin: auto;
+    margin-top: 0.2em;
+    background-color: #037087;
+    color: black;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+/* NAVIGATION BAR */
+
+a {
+    text-decoration: none;
+}
+
+.nav {
+    display: flex;
+    flex-direction: column;
+}
+
+.nav .title {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.nav .title .brand {
+    text-align: center;
+    display: flex;
+    justify-content: flex-start;
+    color: white;
+}
+.nav .title .brand a img{
+    max-width: 10em;
+}
+
+.nav .buttons {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 0.2em;
+    background-color: #EEE;
+
+}
+
+.nav .buttons a {
+    width: 100%;
+    min-height: 2em;
+    margin-inline: 0.2em;
+    color: #037087;
+    transition: 200ms;
+    text-align: center;
+    border-bottom: 5px solid #ddd;
+    border-radius: 15px;
+    padding-top: 0.5em;
+
+}
+
+.nav .buttons a:hover {
+    text-decoration: none;
+    background-color: #FFF;
+    border-bottom: 5px solid #037087;
+    cursor: pointer;
+}
+
+/* MAIN PAGE CONTENT */
+
+.container {
+    min-height: 30em;
+    margin-top: 0.5em;
+    background-image: url("./../../public/img/bg.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 300%;
+}
+.container .container-blur{
+    width: 100%;
+    min-height: 30em;
+    background-color: rgba(30, 120, 150, 0.3);
+    backdrop-filter: blur(5px);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+
+}
+
+.container .title{
+    margin: 0.5em;
+    min-height: 10em;
+    backdrop-filter: blur(7px);
+    background-color: rgba(255, 255, 255, 0.1);
+    text-align: center;
+    color: white;
+    font-size: 0.9em;
+}
+
+.container .search_bar{
+    margin-inline: 0.5em;
+    min-height: 5em;
+    padding: 0.5em;
+    background-color: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(7px);
+    text-align: center;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+}
+.container .search_bar input{
+    background-color: rgba(255, 255, 255, 0.0);
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    width: 90%;
+    margin-inline: auto;
+    border-radius: 15px;
+    color: white;
+    font-size: 1.2em;
+    text-align: center;
+    transition: 200ms;
+}
+.container .search_bar input:hover{
+    background-color: rgba(255, 255, 255, 0.1);
+    cursor: pointer;
+
+}
+
+/* FOOTER */
+
+.footer {
+    display: flex;
+    justify-content: space-evenly;
+    color: #037087;
+    margin-top: 0.3em;
+    margin-bottom: 0.3em;
+    padding-top: 0.2em;
+    padding-bottom: 0.2em;
+    background-color: #ddd;
+}
+.footer .section{
+    padding-top: 1em;
+    min-height: 3em;
+    border-inline: 1px solid #037087;
+    border-radius: 0px;
+    width: 100%;
+    text-align: center;
+}
+.footer .section:first-child{
+    border-left: none;
+}
+
+.footer .section:last-child{
+    border-right: none;
+}
+
+@media (min-width: 1200px) {
+    body{
+        width: 80%;
+        /* font-size: 12px; */
+    }
+    body > *{
+        font-size: 1.3em;
+    }
+
+    /* NAVIGATION BAR */
+
+    .nav .buttons {
+        justify-content: flex-start;
+    }
+
+    .nav .buttons a {
+        max-width: 10em;
+        border-bottom: 3px solid #ddd;
+        transition: 300ms;
+    }
+    
+    .nav .buttons a:hover {
+        border-bottom: 3px solid #037087;
+    }
+
+    .container .title{
+        width: 70%;
+        margin-top: 2em;
+        margin-inline: auto;
+    }
+    
+    .container .search_bar{
+        width: 65%;
+        margin-top: 2em;
+        margin-inline: auto;
+    }
+    .footer{
+        margin: 0;
+        padding: 0;
+        position:absolute;
+        width: 80%;
+        /* height: 3em; */
+    bottom:10px; 
+    }
+}
